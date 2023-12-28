@@ -25,6 +25,15 @@ const EmotionChart = ({ data = [] }) => {
             valueFormatter: (item) => `${item.value} %`
           },
         ]}
+        slotProps={{
+          legend: {
+            direction: 'column',
+            position: { vertical: 'top', horizontal: 'right' },
+            padding: 0,
+            hidden: parseInt(window.innerWidth) < 850
+          },
+        }}
+        margin={{ bottom: 80, left: 10, right:10 }}
         sx={{
           [`& .${pieArcLabelClasses.root}`]: {
             fill: "white",

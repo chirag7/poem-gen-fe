@@ -71,7 +71,7 @@ const MainArea = () => {
       >
             Submit
        </LoadingButton>
-       <div className="flex m-top-10">
+       <div className="main-area m-top-10">
         <DisplayPoem data={generatedPoem} />
         <EmotionChart data={emotions} />
        </div>
