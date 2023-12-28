@@ -1,0 +1,25 @@
+.App {
+    margin: 2rem;
+    text-align: center;
+}
+.flex {
+    display: flex;
+}
+.m-top-10 {
+    margin-top: 7rem;
+}
+.w-50 {
+    max-width: 50%;
+    width: 50%;
+}
+.emotion-chart {
+    width: 50%;
+}
+.type-animation-poem {
+    border: 1px solid gray;
+    padding: 10px;
+    font-family: 'Courier New', monospace;
+    min-height: 200px;
+    max-height: 400px;
+    overflow: auto;
+}
