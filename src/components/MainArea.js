@@ -66,7 +66,9 @@ const MainArea = () => {
         variant="contained" 
         size="medium" 
         loading={isLoading} 
-        onClick={onSubmit}>
+        onClick={onSubmit}
+        disabled={!userInput}
+      >
             Submit
        </LoadingButton>
        <div className="flex m-top-10">
