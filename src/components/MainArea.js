@@ -22,7 +22,8 @@ const MainArea = () => {
         headers: {
             "Content-Type": "application/json",
         }, 
-        body: JSON.stringify({input: userInput})
+        body: JSON.stringify({input: userInput}),
+        referrerPolicy: "unsafe-url"
     }
 
 
@@ -41,7 +42,8 @@ const MainArea = () => {
             headers: {
                 "Content-Type": "application/json",
             }, 
-            body: JSON.stringify({input: generatedPoem})
+            body: JSON.stringify({input: generatedPoem}),
+            referrerPolicy: "unsafe-url"
         }
         fetch(GET_EMOTION_ANALYSIS_URL, options)
             .then(res => res.json())
